@@ -82,11 +82,11 @@
             </div>
             <div class="novo">
               <h3 class="conhecimentos-title">Conhecimentos</h3>
-              <p class="lista-conhecimentos-titulo">Linguagens de Programação</p>
+              <p class="lista-conhecimentos-titulo">Técnologias Utilizadas</p>
               <div class="lista-conhecimentos">
                   <div class="lista-conhecimentos-item">
                       <img src="/img/JS.png" alt="Logo JavaScrip" class="sombra">
-                      <p>JavaScrip</p>
+                      <p>JavaScript</p>
                   </div>
                   <div class="lista-conhecimentos-item">
                       <img src="/img/html.png" alt="Logo HTML" class="sombra">
@@ -275,46 +275,5 @@
     </section>
   </div>
   <script src="scripts.js"></script>
-    <script>
-      const btnMenu = document.querySelector('#btn-menu');
-      const menu = document.querySelector('#menu');
-  
-      btnMenu.addEventListener('click', () => {
-        menu.classList.toggle('ativo');
-      });
-    </script>
-
-    <script>
-      document.querySelector('.mini-menu-button').addEventListener('click', function() {
-      // obtendo o menu lateral
-      var lateralMenu = document.querySelector('.lateral');
-      lateralMenu.classList.toggle('active');
-    });
-
-    var menuItems = document.querySelectorAll('.itens-menu a');
-    for (var i = 0; i < menuItems.length; i++) {
-      menuItems[i].addEventListener('click', function(event) {
-    // obtendo a sessao correspondente ao link clicado
-      var sectionId = event.target.getAttribute('href');
-      var section = document.querySelector(sectionId);
-
-      // retirandoo a classe active de todas sessões
-      var sections = document.querySelectorAll('.section');
-      for (var j = 0; j < sections.length; j++) {
-        sections[j].classList.remove('active');
-    }
-
-    // Adicionando a classe active no link dos menus
-    section.classList.add('active');
-
-    //removendo a classe active dos menus
-    for (var j = 0; j < menuItems.length; j++) {
-      menuItems[j].classList.remove('active');
-    }
-    event.target.classList.add('active');
-    event.preventDefault();
-  });
-}
-    </script>
 </body>
 </html>

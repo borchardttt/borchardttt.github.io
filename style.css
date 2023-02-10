@@ -1,5 +1,7 @@
 /*IMPORTANDO ICONES - Font Awesome Free Icon*/
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">');
 
 /* VARIAVÉIS DE COR*/
 :root {
@@ -9,6 +11,7 @@
   --color-grey: #e3e3e3;
   --color-timeline: #fdf9ff;
   --color-border: #d4d4e3;
+  --color-box: #2d2d2e;
 }
 
 /*Geral*/
@@ -503,7 +506,7 @@ select {
 }
 
 .sobre .sobre-conteudo .timeline {
-  background-color:#272727;
+  background-color:var(--color-box);
   padding: 40px 15px;
   border: 1px solid var(--color-border);
   border-radius: 10px;
@@ -581,8 +584,8 @@ select {
 }
 
 .service .service-item .service-item-inner {
-  background-color: #2d2d2e;
-  border: 1px solid #2d2d2e;
+  background-color: var(--color-box);
+  border: 1px solid var(--color-box);
   border-radius: 10px;
   padding: 30px 15px;
   text-align: center;
