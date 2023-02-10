@@ -482,6 +482,7 @@ select {
   flex: 0 0 33%;
   max-width: 33%;
   margin-top: 60px;
+  text-align: justify;
 }
 
 .sobre .sobre-conteudo .cursos {
