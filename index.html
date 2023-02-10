@@ -249,33 +249,33 @@
                 <div class="linhas">
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
-                      <input type="text" class="form-control"  placeholder="Nome">
+                      <input type="text" class="form-control" id="inputNome" placeholder="Nome">
                     </div>
                   </div>
                   <div class="form-item col-6 padd-15">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Email">
+                      <input type="text" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
                   </div>
                 </div>
                   <div class="linhas">
                     <div class="form-item col-12 padd-15">
                       <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Assunto">
+                        <input type="text" class="form-control" id="inputAssunto" placeholder="Assunto">
                       </div>
                     </div>
                   </div>
                     <div class="linhas">
                       <div class="form-item col-12 padd-15">
                         <div class="form-group">
-                          <textarea class="form-control" placeholder="Escreva aqui sua mensagem..."></textarea>
+                          <textarea class="form-control" id="inputMensagem" placeholder="Escreva aqui sua mensagem..."></textarea>
                         </div>
                       </div>
                     </div>
                     <div class="linhas">
                       <div class="col-12 padd-15">
                         <div class="form-group">
-                          <button type="submit" class="btn btn-primary">Enviar</button>
+                          <button type="submit" class="btn btn-primary" onclick="submitForm()">Enviar</button>
                       </div>
                     </div>
                   </div>
@@ -285,5 +285,14 @@
     </section>
   </div>
   <script src="scripts.js"></script>
+  <script>
+    function submitForm() {
+      var nome = document.getElementById('inputNome').value;
+      var email = document.getElementById('inputEmail').value;
+      var assunto = document.getElementById('inputAssunto').value;
+      var mensagem = document.getElementById('inputMensagem').value;
+      window.open("https://docs.google.com/forms/d/e/1FAIpQLSdTDRM7LcxhTpT6zsU6tsOaO2KAC6FJZmW8KLmxhJQQxHbLDA/viewform?entry.2110855805=" + nome + "&entry.1842464170=" + email + "&entry.463367337=" + assunto + "&entry.1375145796=" + mensagem);
+    }
+  </script>
 </body>
 </html>
