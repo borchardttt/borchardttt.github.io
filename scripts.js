@@ -1,4 +1,3 @@
-
 // Menu lateral com transição para as páginas
 const nav = document.querySelector(".itens-menu"), 
     navList = nav.querySelectorAll("li"), 
